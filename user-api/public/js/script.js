@@ -29,7 +29,7 @@ document.getElementById('user-form').addEventListener('submit', async function (
         resultDiv.innerHTML = `<div class="alert alert-danger">${data.error}</div>`;
       }
     } catch (error) {
-      resultDiv.innerHTML = `<div class="alert alert-danger">Error fetching data. Please try again later.</div>`;
+      resultDiv.innerHTML = `<div class="alert alert-danger">Username does not exist. Please enter a correct username.</div>`;
     }
   });
   
