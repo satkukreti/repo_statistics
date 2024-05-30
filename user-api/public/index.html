@@ -3,16 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GitHub User Stats Finder</title>
+    <title>GitHub User Stats</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Welcome, enter the username below</h1>
-    <form action="" id="user-form">
-      <label for="username">GitHub Username</label>
-      <input type="text" id="username" name="username" required />
-      <button type="submit">Process</button>
-    </form>
-    <div id="result"></div>
+    <div class="container mt-5 container-custom">
+      <h1 class="text-center mt-4 mb-4">Find GitHub User Stats</h1>
+      <form id="user-form" class="form-inline justify-content-center">
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="username" class="sr-only">GitHub Username</label>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+            placeholder="Enter GitHub username"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Get Stats</button>
+      </form>
+      <div id="result" class="mt-4"></div>
+    </div>
+    <div class="copyright">&#169; SatvikKukreti@GoLinks</div>
     <script src="js/script.js"></script>
   </body>
 </html>
